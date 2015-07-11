@@ -14,6 +14,8 @@
 		24ECFE4E1B4435D500D6BD6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ECFE4D1B4435D500D6BD6A /* Images.xcassets */; };
 		24ECFE511B4435D500D6BD6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24ECFE4F1B4435D500D6BD6A /* LaunchScreen.xib */; };
 		24ECFE5D1B4435D500D6BD6A /* Sample_SpringBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ECFE5C1B4435D500D6BD6A /* Sample_SpringBoardTests.m */; };
+		24ECFE681B443F5500D6BD6A /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ECFE671B443F5500D6BD6A /* ContainerViewController.m */; };
+		24ECFE6B1B443F7800D6BD6A /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ECFE6A1B443F7800D6BD6A /* ContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		24ECFE561B4435D500D6BD6A /* Sample-SpringBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sample-SpringBoardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ECFE5B1B4435D500D6BD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24ECFE5C1B4435D500D6BD6A /* Sample_SpringBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sample_SpringBoardTests.m; sourceTree = "<group>"; };
+		24ECFE661B443F5500D6BD6A /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		24ECFE671B443F5500D6BD6A /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		24ECFE691B443F7800D6BD6A /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		24ECFE6A1B443F7800D6BD6A /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		24ECFE3F1B4435D500D6BD6A /* Sample-SpringBoard */ = {
 			isa = PBXGroup;
 			children = (
+				24ECFE691B443F7800D6BD6A /* ContentViewController.h */,
+				24ECFE6A1B443F7800D6BD6A /* ContentViewController.m */,
+				24ECFE661B443F5500D6BD6A /* ContainerViewController.h */,
+				24ECFE671B443F5500D6BD6A /* ContainerViewController.m */,
 				24ECFE441B4435D500D6BD6A /* AppDelegate.h */,
 				24ECFE451B4435D500D6BD6A /* AppDelegate.m */,
 				24ECFE471B4435D500D6BD6A /* ViewController.h */,
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					24ECFE3C1B4435D500D6BD6A = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = P2KQ62R5X2;
 					};
 					24ECFE551B4435D500D6BD6A = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -220,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24ECFE491B4435D500D6BD6A /* ViewController.m in Sources */,
+				24ECFE6B1B443F7800D6BD6A /* ContentViewController.m in Sources */,
 				24ECFE461B4435D500D6BD6A /* AppDelegate.m in Sources */,
+				24ECFE681B443F5500D6BD6A /* ContainerViewController.m in Sources */,
 				24ECFE431B4435D500D6BD6A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +360,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sample-SpringBoard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +373,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Sample-SpringBoard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -416,6 +435,7 @@
 				24ECFE621B4435D500D6BD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24ECFE631B4435D500D6BD6A /* Build configuration list for PBXNativeTarget "Sample-SpringBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +444,7 @@
 				24ECFE651B4435D500D6BD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
